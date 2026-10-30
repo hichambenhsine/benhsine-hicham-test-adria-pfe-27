@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: account-service
+  datasource:
+    url: jdbc:h2:mem:account-db
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  cloud:
+    discovery:
+      enabled: true
+    config:
+      enabled: false
+  h2:
+    console:
+      enabled: true
+  graphql:
+    graphiql:
+      enabled: true
+  ai:
+    mcp:
+      server:
+        protocol: streamable
